@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Project CSS</title>
+    <link rel="icon" href="assets/images/Icon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <header>
+        <nav class="clearfix">
+            <a href="index.html" ><img id="firstImg" src="assets/images/Icon.png" alt="Logo1"></a>
+            <a href="index.html" ><img id="secondImg" src="assets/images/logo.png" alt="Logo1"></a>
+
+            <input type="checkbox" name="tendina" id="tendina">
+            <label id="firstLabel" for="tendina"><i class="lni lni-menu"></i></label>
+            <label id="secondLabel" class="secondaLabel" for="tendina"><i class="lni lni-close"></i></label>
+
+            <ul>
+                <li><a href="#" >Menù</a></li>
+                <li><a href="chi-siamo.html" >Chi Siamo</a></li>
+                <li><a href="contatti.html" >Contatti</a></li>
+                <li><a class="btnRegister" href="#" >Registrati</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>
+                Diventa un Developer Epico
+            </h1>
+            <p>Diventa un developer EPICO e ti troviamo noi il lavoro. Scommettiamo su di te: paghi metà corso, l'altra
+                metà solo quando inizi a lavorare.</p>
+            <a class="btnRegister" href="layout.html" target="_blank">Chiedi Info</a>
+        </section>
+
+        <div class="divContainer">
+            <div class="divMaggiore">
+                <h2>Perchè diventare un Developer?</h2>
+                <p>Non servono laurea e competenze specifiche, solo impegno. Segui il corso online, dove vuoi tu. Il
+                    lavoro che andrai a fare è veramente figo.</p>
+            </div>
+
+            <div class="miniContainer">
+                <div class="divFigli">
+                    <h3><i class="lni lni-comments"></i>
+                        <br>
+                        Tutti ti cercheranno
+                    </h3>
+                    <p>Sono 30.000 in italia le posizioni di developert scoperte, scegli quella che ti stimola di più.
+                    </p>
+                </div>
+                <div class="divFigli">
+                    <h3>
+                        <i class="lni lni-map-marker"></i>
+                        <br>
+                        Potrai lavorare dove vuoi
+                    </h3>
+                    <p>
+                        Non serve lavorare in ufficio per essere creatori di prodotti digitali, e le aziende lo sanno.
+                        Lavora da casa, in riva al mare o in montagna.
+                    </p>
+                </div>
+                <div class="divFigli">
+                    <h3>
+                        <i class="lni lni-consulting"></i>
+                        <br>
+                        Azienda, Freelance o Startup
+                    </h3>
+                    <p>
+                        Scegli più facilmente la carriera e il rapporto di lavoro che ti piace di più, in qualsiasi
+                        momento.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <aside>
+        <div class="divAside ">
+            <h3>
+                Ma chi è il Developer oggi?
+            </h3>
+            <p>
+                Se non lo sai te lo diciamo noi: il futuro è dei developer
+            </p>
+            <a class="btnRegister" href="contatti.html" target="_blank">Scrivici!</a>
+        </div>
+
+        <section id="asideSection">
+
+            <div class="asideDivSectionImg">
+                <img src="assets/images/notebook.jpg" alt="Notebook">
+            </div>
+
+            <div class="asideDivMiniContainer">
+                <div class="asideDivSectionUno">
+                    <h3> <span><i class="lni lni-happy"></i></span> Chi sarai</h3>
+                    <p>Il creatore delle app che usi tutti i giorni</p>
+                </div>
+                <div class="asideDivSectionUno">
+                    <h3> <span><i class="lni lni-cool"></i></i></span> Chi diventerai</h3>
+                    <p>Lo specialista padrone del suo tempo e spazio</p>
+                </div>
+                <div class="asideDivSectionUno">
+                    <h3> <span><i class="lni lni-suspect"></i></span> Chi non sarai</h3>
+                    <p>Il nerd attaccato allo schermo</p>
+                </div>
+            </div>
+        </section>
+    </aside>
+
+    <footer>
+
+        <section class="sectionFooter">
+            <div>
+                <h3>Chi siamo</h3>
+                <p>Boolean School nasce con l'opiettivo di rivoluzionare la formazione in ambito Tech</p>
+            </div>
+            <div>
+                <h3>
+                    Ti piace ciò che vedi? Condivido con i tuoi amici!
+                </h3>
+                <a href="https://www.facebook.com/" target="_blank"><i class="lni lni-facebook-original"></i></a>
+             <a href="https://www.linkedin.com/feed/" target="_blank"><i class="lni lni-linkedin-original"></i></a>
+             <a href="https://www.instagram.com/" target="_blank"><i class="lni lni-instagram-filled"></i> </a>
+            </div>
+            <div class="footerNews">
+                <form action="register.php">
+                    <label id="terzaLabel" for="newsletter">
+                        <h3>Iscriviti alla nostra newsletter</h3>
+                    </label>
+                    <input type="text" name="newsletter" id="newsletter">
+                    <button type="submit" id="invia">Va Bene!</button>
+                </form>
+
+            </div>
+        </section>
+
+        <div>
+            <address>© 2022 Boolean Web Developer School - Via Milano Marittima 2, 075 Milano - Tel 123456789</address>
+        </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>

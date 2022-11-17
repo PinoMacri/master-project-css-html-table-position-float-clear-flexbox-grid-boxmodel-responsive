@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Project CSS</title>
+  <link rel="icon" href="assets/images/Icon.png">
+  <link rel="stylesheet" href="assets/css/style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+  <header>
+    <nav class="clearfix">
+      <a href="index.html" ><img id="firstImg" src="assets/images/Icon.png" alt="Logo1"></a>
+      <a href="index.html" ><img id="secondImg" src="assets/images/logo.png" alt="Logo1"></a>
+
+      <input type="checkbox" name="tendina" id="tendina">
+      <label id="firstLabel" for="tendina"><i class="lni lni-menu"></i></label>
+      <label id="secondLabel" for="tendina"><i class="lni lni-close"></i></label>
+
+      <ul>
+        <li><a href="index.html" >Menù</a></li>
+        <li><a href="#">Chi Siamo</a></li>
+        <li><a href="contatti.html" >Contatti</a></li>
+        <li><a class="btnRegister" href="#" >Registrati</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>We are coder</h1>
+      <p>Boolean School nasce con l'obiettivo di rivoluzionare la formazione in ambito tech. Vogliamo essere il
+        movimento dei creatori digitali che il mercato richiede: formiamo, forniamo e aggiorniamo specialisti con la
+        missione di trasformare le aziende dall'interno e offrire ai giovani sicure prospettive di carriera. Siamo a
+        Roma ma arriviamo in tutta italia, per creare lòa commuity che rivoluzionerà il mondo del lavoro.</p>
+    </section>
+
+    <div class="divImgContainer">
+      <div>
+        <img src="assets/images/foto1.jpg" alt="foto1">
+        <p>Investiamo sul talento e vogliamo dimostrartelo: effettua un colloquio di selezione per accedere ad una delle
+          5 borse di studio disponibili.</p>
+      </div>
+      <div>
+        <img id="imgDifetta" src="assets/images/foto2.jpg" alt="foto2">
+        <p>Riceverai subito l'esito, quindi ti consigliamo di contattarci prima che le borse di studio si esauriscano:
+          contattaci e candidati subito</p>
+      </div>
+    </div>
+
+  </main>
+
+  <aside>
+
+    <h3>Prezzi dei corsi</h3>
+    <!-- TABELLA 1 -->
+    <table id="tableUno">
+
+      <body>
+        <tr class="cellaBlu">
+          <td><b>Base 500€</b></td>
+          <td>30 ore di formazione</td>
+        </tr>
+        <tr class="cellaBlu">
+          <td><b>Intermedio 1000€</b></td>
+          <td>Tutte le caratteristiche del corso base</td>
+        </tr>
+        <tr class="cellaBlu">
+          <td><b>Avanzato 2000€</b></td>
+          <td>Tutte le caratteristiche del corso intermedio</td>
+        </tr>
+        <tr>
+          <td><b>Base 500€ </b></td>
+          <td>Supporto post corso</td>
+        </tr>
+        <tr>
+          <td><b>Intermedio 1000€</b></td>
+          <td>Rateazione in 12 mesi</td>
+        </tr>
+        <tr>
+          <td><b>Avanzato 2000€</b></td>
+          <td>Video registrazioni</td>
+        </tr>
+        <tr class="cellaBlu">
+          <td><b>Base 500€</b></td>
+          <td>Stage aziendale</td>
+        </tr>
+        <tr class="cellaBlu">
+          <td><b>Intermedio 1000€</b></td>
+          <td>Ripetizione del corso</td>
+        </tr>
+        <tr class="cellaBlu">
+          <td><b>Avanzato 2000€</b></td>
+          <td>Supporto 24h dedicato</td>
+        </tr>
+      </body>
+    </table>
+    <!-- TABELLA DUE -->
+    <table id="tableDue">
+      <thead>
+        <tr class="cellaBluIntestazione">
+          <th>Base 500€ + IVA</th>
+          <th>Intermedio 1000€ + IVA</th>
+          <th>Avanzato 2000€ + IVA</th>
+        </tr>
+        <tr class="cellaBlu">
+          <td>30 ore di formazione</td>
+          <td>Tutte le caratteristiche del corso base</td>
+          <td>Tutte le caratteristiche del corso intermedio</td>
+        </tr>
+        <tr>
+          <td>Supporto post corso</td>
+          <td>Rateazione in 12 mesi</td>
+          <td>Video registrazioni</td>
+        </tr>
+        <tr class="cellaBlu">
+          <td>Stage aziendale</td>
+          <td>Ripetizione del corso</td>
+          <td>Supporto 24h dedicato</td>
+        </tr>
+      </thead>
+    </table>
+  </aside>
+
+  <footer>
+
+    <section class="sectionFooter">
+      <div>
+        <h3>Chi siamo</h3>
+        <p>Boolean School nasce con l'opiettivo di rivoluzionare la formazione in ambito Tech</p>
+      </div>
+      <div>
+        <h3>
+          Ti piace ciò che vedi? Condivido con i tuoi amici!
+        </h3>
+        <a href="https://www.facebook.com/" target="_blank"><i class="lni lni-facebook-original"></i></a>
+        <a href="https://www.linkedin.com/feed/" target="_blank"><i class="lni lni-linkedin-original"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="lni lni-instagram-filled"></i> </a>
+      </div>
+      <div class="footerNews">
+        <form action="register.php">
+          <label for="newsletter">
+            <h3>Iscriviti alla nostra newsletter</h3>
+          </label>
+          <input type="text" name="newsletter" id="newsletter">
+          <button type="submit" id="invia">Va Bene!</button>
+        </form>
+
+      </div>
+    </section>
+
+    <div>
+      <address>© 2022 Boolean Web Developer School - Via Milano Marittima 2, 075 Milano - Tel 123456789</address>
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>

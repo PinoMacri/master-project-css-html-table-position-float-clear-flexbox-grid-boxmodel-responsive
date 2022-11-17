@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Master Project CSS</title>
+  <link rel="icon" href="assets/images/Icon.png">
+  <link rel="stylesheet" href="assets/css/style3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+  <header>
+    <nav class="clearfix">
+      <a href="index.html"><img id="firstImg" src="assets/images/Icon.png" alt="Logo1"></a>
+      <a href="index.html"><img id="secondImg" src="assets/images/logo.png" alt="Logo1"></a>
+
+      <input type="checkbox" name="tendina" id="tendina">
+      <label id="firstLabel" for="tendina"><i class="lni lni-menu"></i></label>
+      <label id="secondLabel" for="tendina"><i class="lni lni-close"></i></label>
+
+      <ul>
+        <li><a href="index.html">Menù</a></li>
+        <li><a href="chi-siamo.html">Chi Siamo</a></li>
+        <li><a href="#" >Contatti</a></li>
+        <li><a class="btnRegister" href="#">Registrati</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <aside class="contatti">
+    <h2>Contatti</h2>
+    <div class="asideMiniContainerDue">
+
+      <section id="sezFormAside">
+        <form id="formAside" method="POST" action="register.php">
+          <input type="text" name="nome" id="newsletterDue" placeholder="Nome e cognome">
+          <input type="text" name="email" id="email" placeholder="Inidirizzo valido nome@casella.com">
+          <textarea name="testo" id="testo" cols="30" rows="5"
+            placeholder="Scrivi in breve il tuo messaggio"></textarea>
+          <button class="btnRegister" type="submit" id="invia">INVIA Il MESSAGGIO</button>
+        </form>
+      </section>
+
+      <div class="divInfo">
+        <h3>Sede informativa</h3>
+        <address>Via Appia 1 <br> 00100 Roma (RM) <br> info@epicode.school <br> +3906123456789</address>
+        <h3>Lavora con noi</h3>
+        <p>Per poterti candidare ad un ruolo da docente invia il tuo cv a job@epicode.school</p>
+      </div>
+    </div>
+  </aside>
+
+  <footer>
+    <section class="sectionFooter">
+      <div>
+        <h3>Chi siamo</h3>
+        <p>Boolean School nasce con l'opiettivo di rivoluzionare la formazione in ambito Tech</p>
+      </div>
+      <div>
+        <h3>
+          Ti piace ciò che vedi? Condivido con i tuoi amici!
+        </h3>
+        <a href="https://www.facebook.com/" target="_blank"><i class="lni lni-facebook-original"></i></a>
+             <a href="https://www.linkedin.com/feed/" target="_blank"><i class="lni lni-linkedin-original"></i></a>
+             <a href="https://www.instagram.com/" target="_blank"><i class="lni lni-instagram-filled"></i> </a>
+      </div>
+      <div class="footerNews">
+        <form action="register.php">
+          <h3>Iscriviti alla nostra newsletter</h3>
+
+          <input type="text" name="newsletter" id="newsletter">
+          <button type="submit" id="invia">Va Bene!</button>
+        </form>
+
+      </div>
+    </section>
+
+    <div>
+      <address>© 2022 Boolean Web Developer School - Via Milano Marittima 2, 075 Milano - Tel 123456789</address>
+    </div>
+  </footer>
+</body>
+
+</html>

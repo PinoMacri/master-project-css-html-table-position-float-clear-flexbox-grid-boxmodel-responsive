@@ -1,0 +1,287 @@
+/*CSS RESET & GENERALI*/
+* {
+    font-family: 'Fredoka', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em red;
+}
+h2, h3 {
+    font-weight: 400;
+}
+ul {
+    list-style-type: none;
+    clear: both;
+}
+.lni.lni-comments,.lni.lni-map-marker,.lni.lni-consulting,.lni.lni-laptop-phone {
+    color: red;
+    margin-right: 10px;
+}
+
+.btnTornaIndietro {
+    border: 2px solid gold;
+    float: right;
+}
+
+/*LAYOUT*/
+#container {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'main aside section'
+    'footer footer footer';   
+}
+#header {
+    grid-area: header;
+    border: 2px solid white;
+    
+    
+}
+#main {
+    grid-area: main;
+    border: 2px solid white;
+    padding: 20px;
+    background-color: #001533;
+    
+}
+#main h2 {
+    margin-bottom: 60px;
+}
+#aside {
+    grid-area: aside;
+    border: 2px solid white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    background-color: #6ED663;
+    
+}
+#section {
+    grid-area: section;
+    border: 2px solid white;
+    padding: 20px;
+    background-image: linear-gradient(#001533,#6ED663);
+}
+#section h2 {
+margin-bottom: 60px;
+}
+
+#footer {
+    grid-area: footer;
+    border: 2px solid white;
+   
+}
+/*RESPONSIVE LAYOUT 0-768PX E 7680x-IN POI*/
+@media screen and (max-width:768px) { #container {
+grid-template-areas:  
+'header'
+'main'
+'aside' 
+'section'
+'footer'; 
+} 
+}
+/*-------------------------------------------------------------------------------------*/
+/*HEADER DIV*/
+#header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 3;
+}
+#secondImg {
+    width: 300px;
+    display: none;
+}
+header nav {
+    padding: 20px;
+
+}
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+#header nav img {
+    font-size: 50px;
+}
+
+#header nav ul {
+    list-style-type: none;
+    font-size: 20px;
+    float: right;
+    clear: both;
+    text-align: right;
+    display: none;
+    background-color: white;
+}
+
+#header nav a {
+    text-decoration: none;
+}
+
+#header nav li {
+    margin-top: 8px;
+}
+
+input {
+    display: none;
+}
+
+#firstLabel,#secondLabel {
+    font-size: 50px;
+    color: #031833;
+    float: right;
+    margin-top: -4px;
+    cursor: pointer;
+}
+
+#tendina:checked~ul {
+    display: block;
+}
+
+.btnRegister {
+    background-image: linear-gradient(to right, #6ED663, #031833);
+    color: white;
+    padding: 7px;
+    text-decoration: none;
+}
+
+#secondLabel {
+    font-size: 50px;
+    margin-top: 5px;
+    display: none;
+}
+
+#tendina:checked+#firstLabel {
+    display: none;
+}
+
+#tendina:checked~#secondLabel {
+    display: block;
+    color: #6ED663;
+}
+
+/*HEADER-NAV/RESPONSIVE-DA 768PX*/
+@media  screen and (min-width:768px) { #firstLabel,#secondLabel {
+    display: none;
+}
+#tendina:checked~#secondLabel {
+    display: none;
+}
+}
+@media  screen and (min-width:768px) { #header nav ul {
+    display: inline;
+    margin-top:9px;
+    
+}
+}
+@media  screen and (min-width:768px) { #header nav ul li {
+    display: inline;
+    margin: 0px 10px;
+    
+}
+}
+/*HEADER-NAV/RESPONSIVE-DA 1024PX*/
+@media  screen and (min-width:1024px) { #firstImg {
+    display: none;
+}
+}
+@media  screen and (min-width:1024px) { #secondImg {
+    display: inline;
+}
+}
+@media  screen and (min-width:1024px) { #header nav  {
+    padding: 40px ;
+    margin: 0px 50px auto;
+}
+}
+@media  screen and (min-width:1024px) { #header nav ul {
+    margin-top: 20px ;
+}
+}
+
+/*HEADER-NAV/RESPONSIVE-DA 1280PX*/
+@media  screen and (min-width:1280px) { #header nav ul  {
+    font-size: 30px;
+    margin-top: 26px;
+  }
+  }
+  @media  screen and (min-width:1280px) { #firstImg  {
+    width: 300px;
+  }
+  }
+  @media  screen and (min-width:1280px) { #secondImg  {
+    width: 350px;
+  }
+  }
+
+/*----------------------------------------------------------------------------*/
+
+/*FOOTER*/
+#footer {
+    background-image: linear-gradient(to right, #6ED663, #031833);
+    padding: 40px;
+    
+}
+
+#footer h3 {
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em red;
+    font-weight: 400;
+}
+
+#footer>section>div>p  {
+    color: white;
+    font-size: 15px;
+    margin: 0px 
+}
+.lni {
+    margin-right: 20px;
+    
+}
+.lni.lni-facebook-original {
+    font-size: 25px;
+}
+.lni.lni-linkedin-original {
+    font-size: 25px;
+}
+.lni.lni-instagram-filled {
+    font-size: 25px;
+}
+
+#footer section div {
+    margin-bottom: 30px;
+}
+
+#footer section div input {
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+form button {
+    background-image: linear-gradient(to right, #6ED663, #031833);
+    color: white;
+    padding: 7px;
+    text-decoration: none;
+    width: 100%;
+}
+#footer address {
+    font-style: normal;
+    text-align: center ;
+}
+/*FOOTER-RESPONSIVE DA 768PX, | 1024&1280 VA BENE COSI |*/
+@media screen and (min-width:768px) { .sectionFooter {
+    display: flex;
+}   
+}
+@media screen and (min-width:768px) { #footer section div {
+    width: calc(100% /3);
+    padding: 30px;
+}   
+}
